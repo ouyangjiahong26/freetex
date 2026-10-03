@@ -46,7 +46,7 @@ export default function Home() {
   const recognizeBytes = useCallback((bytes: Uint8Array) => {
     const reader = new FileReader();
     reader.onload = () => setImageData(reader.result as string);
-    reader.readAsDataURL(new Blob([bytes]));
+    reader.readAsDataURL(new Blob([bytes.buffer as ArrayBuffer]));
     setError(null);
     invoke("recognize_image_bytes", { bytes: Array.from(bytes) }).catch((e) =>
       setError(String(e))
