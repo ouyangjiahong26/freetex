@@ -114,7 +114,7 @@ Hotkey Listener ─┐
 
 打 tag `v*` 推送触发 `release.yml`：校验（validate-release.sh，含 updater endpoint 与仓库一致性检查）→ 双平台测试 → Linux x64/arm64（deb/rpm/AppImage）+ Windows x64/arm64（NSIS/MSI）+ Android arm64（签名 APK）构建（`TAURI_SIGNING_PRIVATE_KEY` 签名 updater 产物）→ 合并 latest.json（merge-updater-json.sh）→ GitHub Release（含 checksums.txt）。
 
-**发布前必改**：`tauri.conf.json` 里 updater `endpoints` 与 README 徽章的 `cislunarspace/freetex` 换成实际仓库（validate 脚本会拦）。GitHub secrets 需配 `TAURI_SIGNING_PRIVATE_KEY`（`~/.tauri/freetex-updater.key` 内容）与 `TAURI_KEY_PASSWORD`（本密钥为空串）；Android 另需 `ANDROID_KEYSTORE_BASE64`（keystore 的 base64）与 `ANDROID_KEYSTORE_PASSWORD`。私钥丢失则无法再发更新；Android keystore 丢失则无法向已装用户推更新。
+**发布前必改**：`tauri.conf.json` 里 updater `endpoints` 与 README 徽章的 `ouyangjiahong26/freetex` 换成实际仓库（validate 脚本会拦）。GitHub secrets 需配 `TAURI_SIGNING_PRIVATE_KEY`（`~/.tauri/freetex-updater.key` 内容）与 `TAURI_KEY_PASSWORD`（本密钥为空串）；Android 另需 `ANDROID_KEYSTORE_BASE64`（keystore 的 base64）与 `ANDROID_KEYSTORE_PASSWORD`。私钥丢失则无法再发更新；Android keystore 丢失则无法向已装用户推更新。
 
 **Android 发布说明**：签名配置在 `src-tauri/gen/android/app/build.gradle.kts`（读四件套环境变量），keystore 本地在 `.dev/android/`（不入库，密码在 keystore.env）；gen/android 整个入库，人工改动不会丢。移动端无应用内更新，APK 直接挂 Release 页。
 

@@ -6,12 +6,12 @@
 
 **Open-source desktop formula OCR · fully offline**
 
-[![CI](https://github.com/cislunarspace/freetex/actions/workflows/ci.yml/badge.svg)](https://github.com/cislunarspace/freetex/actions/workflows/ci.yml)
-[![Release](https://github.com/cislunarspace/freetex/actions/workflows/release.yml/badge.svg)](https://github.com/cislunarspace/freetex/actions/workflows/release.yml)
-[![Version](https://img.shields.io/github/v/release/cislunarspace/freetex)](https://github.com/cislunarspace/freetex/releases)
-[![Downloads](https://img.shields.io/github/downloads/cislunarspace/freetex/total)](https://github.com/cislunarspace/freetex/releases)
+[![CI](https://github.com/ouyangjiahong26/freetex/actions/workflows/ci.yml/badge.svg)](https://github.com/ouyangjiahong26/freetex/actions/workflows/ci.yml)
+[![Release](https://github.com/ouyangjiahong26/freetex/actions/workflows/release.yml/badge.svg)](https://github.com/ouyangjiahong26/freetex/actions/workflows/release.yml)
+[![Version](https://img.shields.io/github/v/release/ouyangjiahong26/freetex)](https://github.com/ouyangjiahong26/freetex/releases)
+[![Downloads](https://img.shields.io/github/downloads/ouyangjiahong26/freetex/total)](https://github.com/ouyangjiahong26/freetex/releases)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20Android-blue)](https://github.com/cislunarspace/freetex/releases)
+[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20Android-blue)](https://github.com/ouyangjiahong26/freetex/releases)
 
 **English** | [简体中文](README.zh-CN.md)
 
@@ -23,7 +23,7 @@ Snip or paste a formula image and freetex recognizes it locally as LaTeX, straig
 
 ## Installation
 
-Grab the package for your platform from [Releases](https://github.com/cislunarspace/freetex/releases):
+Grab the package for your platform from [Releases](https://github.com/ouyangjiahong26/freetex/releases):
 
 | Platform | Package |
 |---|---|
@@ -45,7 +45,7 @@ On first launch, download the recognition model (~180 MB, one time) on the **Set
 ## Build from source
 
 ```bash
-git clone https://github.com/cislunarspace/freetex && cd freetex
+git clone https://github.com/ouyangjiahong26/freetex && cd freetex
 cd frontend && npm install && cd ..
 npx --prefix frontend tauri dev    # develop
 npx --prefix frontend tauri build  # build
@@ -62,7 +62,7 @@ npx --prefix frontend tauri build  # build
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=cislunarspace/freetex&type=Date)](https://star-history.com/#cislunarspace/freetex&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=ouyangjiahong26/freetex&type=Date)](https://star-history.com/#ouyangjiahong26/freetex&Date)
 
 ## License
 
