@@ -123,3 +123,11 @@ Hotkey Listener ─┐
 - 单元测试在各文件 `#[cfg(test)]`；`cargo test --lib` 不需要 GUI 与模型。
 - 引擎端到端测试用 `#[ignore]` 标记：`cargo test --lib e2e -- --ignored`，需要 `.dev/models/` 有模型文件与 `.dev/test-images/`。
 - 平台模块（钩子、evtest、截屏）只有构造/冒烟测试。
+
+## Agent skills
+
+工程技能的仓库级约定在 `docs/agents/`：
+
+- `issue-tracker.md`：GitHub Issues（`gh`）操作约定、AI 贡献标记、GitHub Project 状态流转
+- `triage-labels.md`：五个标准分诊角色到仓库标签的映射
+- `domain.md`：领域文档布局（根 `CONTEXT.md` + `docs/adr/`）与探索入口
