@@ -430,7 +430,7 @@ pub async fn install_update() -> Result<(), String> {
 #[cfg(target_os = "android")]
 #[tauri::command]
 pub fn get_releases_url() -> String {
-    "https://github.com/cislunarspace/freetex/releases".to_string()
+    "https://github.com/ouyangjiahong26/freetex/releases".to_string()
 }
 
 // ---------- 流水线装配 ----------
