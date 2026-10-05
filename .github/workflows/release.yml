@@ -115,7 +115,7 @@ jobs:
           APPIMAGE_EXTRACT_AND_RUN: "1"
 
       - name: 上传 Linux 软件包产物
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: freetex-linux-${{ matrix.arch }}-packages
           path: |
@@ -170,7 +170,7 @@ jobs:
           TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ${{ secrets.TAURI_KEY_PASSWORD }}
 
       - name: 上传 Windows 安装包产物
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: freetex-windows-${{ matrix.arch }}-packages
           path: |
@@ -250,7 +250,7 @@ jobs:
           mv "$APK" "freetex_${VERSION}_android_arm64.apk"
 
       - name: 上传 Android 产物
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: freetex-android-arm64-apk
           path: freetex_*_android_arm64.apk
